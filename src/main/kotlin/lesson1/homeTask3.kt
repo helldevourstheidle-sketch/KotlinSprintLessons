@@ -1,5 +1,6 @@
 package org.example.lesson3
 
+
 fun main()
 {
     val year: Int = 1961
