@@ -6,4 +6,5 @@ fun main() {
     val buffCrystalOre: Int = crystalOre * buff / 100
     println(buffMetalOre)
     println(buffCrystalOre)
+
 }
