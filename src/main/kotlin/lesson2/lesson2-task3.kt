@@ -4,8 +4,8 @@ fun main() {
     val travelTimeMinutes = 457
     val travelTimeHours = travelTimeMinutes / minInHour
     val travelTimeHoursRemain = travelTimeMinutes % minInHour
-    val travelTimeEndHours = (trainLeftTimeMinutes + travelTimeHoursRemain) / 60
-    val travelTimeEndMinutes = (trainLeftTimeMinutes + travelTimeHoursRemain) % 60
+    val travelTimeEndHours = (trainLeftTimeMinutes + travelTimeHoursRemain) / minInHour
+    val travelTimeEndMinutes = (trainLeftTimeMinutes + travelTimeHoursRemain) % minInHour
     print(trainLeftTimeHours + travelTimeHours + travelTimeEndHours)
     print(':')
     print(travelTimeEndMinutes)
