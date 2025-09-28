@@ -1,8 +1,12 @@
 fun main() {
     val secInSpace: Short = 6480
-    val minInSpace = secInSpace / 60
-    val hourInSpace = minInSpace / 60
-    val ostMinInSpace = secInSpace % 60
-    val ostHourInSpace = minInSpace % 60
-    println("0$hourInSpace:$ostHourInSpace:0$ostMinInSpace")
+    val minInSpace = secInSpace / secInMin
+    val hourInSpace = minInSpace / minInHour
+    val ostMinInSpace = secInSpace % secInMin
+    val ostHourInSpace = minInSpace % minInHour
+    val timeInSpaceToPrint = String.format("%s$hourInSpace:$ostHourInSpace:%s$ostMinInSpace", "0", "0")
+    println(timeInSpaceToPrint)
 }
+
+const val minInHour = 60
+const val secInMin = 60
