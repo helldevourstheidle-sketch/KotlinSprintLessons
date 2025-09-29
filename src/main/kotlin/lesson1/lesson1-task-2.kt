@@ -7,5 +7,4 @@ fun main() {
     //println(employeesCount)
     employeesCount = 1999
     println(employeesCount)
-
 }
