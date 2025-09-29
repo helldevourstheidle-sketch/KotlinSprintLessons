@@ -1,12 +1,13 @@
 fun main() {
     val firstName = "Татьяна"
-    var lastNameBeforeMarriage = "Андреева"
-    var lastNameAfterMarriage = "Сидорова"
+    var lastName = "Андреева"
     val patronymic = "Сергеевна"
-    var ageBeforeMarriage = 20
-    var ageAfterMarriage = 22
+    var age = 20
     var space = ' '
-    println(lastNameBeforeMarriage + space + firstName + space + patronymic + ',' + ageBeforeMarriage)
-    println(lastNameAfterMarriage + space + firstName + space + patronymic + ',' + ageAfterMarriage)
+    println(lastName + space + firstName + space + patronymic + ',' + age)
+    lastName = "Сидорова"
+    age = 22
+    println(lastName + space + firstName + space + patronymic + ',' + age)
 
 }
+
