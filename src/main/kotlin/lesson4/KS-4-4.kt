@@ -1,14 +1,11 @@
 fun main() {
     val trainDay = 5
-    val workoutForArms = trainDay % 2 != 0
-    val workoutForLegs = trainDay % 2 == 0
-    val workoutForback = trainDay % 2 == 0
-    val workoutforAbs = trainDay % 2 != 0
+
     println(
-        """|Упражнения для рук:$workoutForArms
-        |Упражнения для ног:$workoutForLegs
-        |Упражнения для спины:$workoutForback
-        |Упражнения для пресса:$workoutforAbs
+        """|Упражнения для рук:${trainDay % 2 != 0}
+        |Упражнения для ног:${trainDay % 2 == 0}
+        |Упражнения для спины:${trainDay % 2 == 0}
+        |Упражнения для пресса:${trainDay % 2 != 0}
     """.trimMargin()
     )
 }
