@@ -7,9 +7,7 @@ fun main() {
     val userNumber2 = readln().toInt()
     if (userNumber1 == winNumber1 && userNumber2 == winNumber2 || userNumber1 == winNumber2 && userNumber2 == winNumber1) {
         println("Поздравляем! Вы выиграли главный приз!")
-    } else if (userNumber1 == winNumber1 || userNumber1 == winNumber2) {
-        println("Вы выиграли утешительный приз!")
-    } else if (userNumber2 == winNumber1 || userNumber2 == winNumber2) {
+    } else if (userNumber1 == winNumber1 || userNumber1 == winNumber2 || userNumber2 == winNumber1 || userNumber2 == winNumber2) {
         println("Вы выиграли утешительный приз!")
     } else println("Неудача!")
     println("Выйгрышные номера:$winNumber1,$winNumber2")
