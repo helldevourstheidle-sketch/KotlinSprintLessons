@@ -2,8 +2,7 @@ fun main() {
     val yearOfBirth = YEAR_TODAY - readln().toInt()
     if (yearOfBirth >= AGE_OF_MAJORITY) {
         println("Show special content")
-    }
-    if (yearOfBirth < AGE_OF_MAJORITY) {
+    } else {
         println("Back to main screen")
     }
 }
